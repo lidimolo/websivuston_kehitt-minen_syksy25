@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(180deg, #e5f5ff 0%, #c0d6ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+.myphoto {
+    width: 300px;
+    border-radius: 5%;
+}
+   table {
+        border-collapse: collapse;
+        width: 50%;
+        }
+    th, td  {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        }
+    th {
+        background-color: #e5f5ff;
+    }
+    td {
+        background-color: rgb(217, 228, 236, 0.5);
+        text-align: left;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 80%;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"] {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+     input[type="submit"]
+     {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+     }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    div {
+        background-color: azure;
+        margin-top: 30px;
+        margin-left:0;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+        /*border: 2px, solid, #ff9335;*/
+        outline: 2px solid #f3bb15; 
+        outline-offset: 5px;
+    }
