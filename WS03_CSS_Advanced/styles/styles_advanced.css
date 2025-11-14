@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(180deg, #e5f5ff 0%, #c0d6ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+.filter-image {
+    width: 300px;
+    border-radius: 5%;
+}
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+   table {
+        border-collapse: collapse;
+        width: 50%;
+        }
+    th, td  {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        }
+    th {
+        background-color: #e5f5ff;
+    }
+    td {
+        background-color: rgb(217, 228, 236, 0.5);
+        text-align: left;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 80%;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"] {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+     input[type="submit"]
+     {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+     }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    div {
+        background-color: azure;
+        margin-top: 30px;
+        margin-left:0;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+        /*border: 2px, solid, #ff9335;*/
+        outline: 2px solid #f3bb15; 
+        outline-offset: 5px;
+    }
+    .transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        margin-top: 30px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5%;
+      }
+      
+      .transition-button:hover {
+        background-color: #f3bb15;
+      }
+      .animation-box {
+        width: 50px;
+        height: 20px;
+        background-color: #f3bb15;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      @keyframes move {
+        from {
+            left: 0;
+        }
+        to {
+            left: 230px;
+        }
+      }
+    .pseudo-list li {
+       list-style-position: inside;
+    }
+      .pseudo-list li:nth-child(odd) {
+        background-color: #f3bb15;
+    }
+      .pseudo-list li:nth-child(even) {
+        background-color: #c0eeff;
+    }
+   .quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+   }
+   .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #f3bb15;
+      }
+    
