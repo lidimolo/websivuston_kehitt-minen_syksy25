@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(180deg, #e5f5ff 0%, #c0d6ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgb(255, 144, 231);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .responsive-box {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: wavy;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-box {
+      background-color: lightcoral;
+    }
+  }
+  @media (min-width: 601px) {
+    .responsive-box {
+      background-color: lightseagreen;
+    }
+  }
+  footer {
+    color: blue;
+  }
