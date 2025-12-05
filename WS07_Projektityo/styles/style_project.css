@@ -1,0 +1,38 @@
+.navbar.custom-navbar {
+  position: absolute; /* чтобы navbar был поверх блока */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* поверх фона */
+}
+.navbar-bg {
+  background-color: #211e1e3f; /* полупрозрачная плашка */
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem; /* отступы сверху/снизу и слева/справа */
+  border-radius: 15px; /* по желанию */
+   display: flex;
+  align-items: center;
+  flex-wrap: nowrap;  
+}
+.main-section {
+
+  background-image: linear-gradient(rgba(30, 29, 46, 0.5), rgba(0,0,0,0)), url(/WS07_Projektityo/images/sea.jpg); 
+  background-size: cover;      /* изображение растягивается по всему блоку */
+  background-position: center;
+  height: 700px;               /* высота блока, можно менять */
+  display: flex;
+  align-items: center;   /* вертикальное центрирование */
+  position: relative;
+   margin-top: 0;
+  padding-top: 0;
+  color: white;
+
+}
+.main-section .container {
+  margin-top: 0;
+  padding-top: 0;
+}
+.title {
+  font-size: clamp(24px, 10vw, 120px); /* минимальный, адаптивный, максимальный размер */
+}

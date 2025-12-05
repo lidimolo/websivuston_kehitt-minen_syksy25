@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(180deg, #e5f5ff 0%, #c0d6ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+}
+h1 {
+    text-align: center;
+}
+    .row {
+        background-color: azure;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        outline: 2px solid #f3bb15; 
+        outline-offset: 5px;
+    }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+     margin: 20px ;
+}
+.row
+{
+    flex: 1;
+    padding: 10px;
+    background-color: #f3bb15;
+    margin: 10px ;
+    outline: none;
+    text-align: center;
+}
+
+@media (max-width 600px) {
+    .column {
+        flex: 100%;
+    } 
+}
+.responsive-image {
+      max-width: 60%;
+      height: auto;
+      display: block;   
+      margin: 0 auto;   
+      border-radius: 5px;
+        filter: brightness(50%); 
+    }
+    .media-query-box {
+      padding: 30px;
+      text-align: center;
+      margin: 30px;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: #f3bb15;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: rgb(59, 206, 255);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+    .menu-toggle {
+        margin: 10px;
+        border-radius: 5px;
+    }
+.responsive-nav {
+ display: flex;
+ align-items: center;  
+  gap: 10px;            
+  padding: 10px;
+  background-color: #f0f5ff;
+}
+.image-container {
+  position: relative;     
+  display: inline-block;
+  margin-top: 30px;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 100px;
+  text-align: left;
+  font-weight: light;
+}
+.card {
+    margin: 1rem;
+}
+.col1 {
+  background-color: lightblue;
+}
+
+.col2 {
+  background-color: lightgreen;
+}
+
+.col3 {
+  background-color: lightpink;
+}
