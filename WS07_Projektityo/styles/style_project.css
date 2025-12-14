@@ -57,7 +57,7 @@ flex-basis: auto  !important ; }
 
 .main-section {
 
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(../images/sea.jpg); 
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url('../images/sea.jpg'); 
   background-size: cover;      
   background-position: center;
   height: 700px;               
