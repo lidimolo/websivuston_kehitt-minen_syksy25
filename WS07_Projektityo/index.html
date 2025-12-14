@@ -1,39 +1,213 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WS07_Projektityo</title>
-  <link rel="stylesheet" href="styles/style_project.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark ">
-  <div class="container">
-     <div class="navbar-bg"> 
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS07_Projektityo</title>
+    <link rel="stylesheet" href="styles/style_project.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/icon3.png" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="header-content">
+        <a class="header-link" href="index.html">Home</a>
+        <a class="header-link hide-on-mobile-link" href="tours.html"
+          >Our tours</a
+        >
+        <a class="header-link hide-on-mobile-link" href="about.html"
+          >About us</a
+        >
+        <a class="header-link hide-on-mobile-link" href="contacts.html"
+          >Contact</a
+        >
+        <button
+          class="navbar-toggler"
+          style="color: #ffc637"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="tours.html">Our tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="tours.html">Our tours</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-      </ul>
+    <div class="main-section">
+      <img
+        class="text-svg"
+        src="/WS07_Projektityo/images/text_main.svg"
+        alt="teaxt_main"
+      />
+      <div class="hero-container">
+        <h2>Explore new places with us</h2>
+        <a class="btn btn-primary" href="tours.html">Our tours</a>
+      </div>
     </div>
-  </div>
-  </div>
-</nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-<div class="main-section">
-  <div class="container">
-    <h1 class="title">We Create Best Impressions</h1>
-    <h2>We are looking for people...</h2>
-    <button type="button" class="btn btn-outline-primary">Our tours</button>
-  </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <div class="gallery">
+      <div
+        class="card"
+        style="background-image: url(/WS07_Projektityo/images/card1.jpg)"
+      >
+        <p class="title-card">10+</p>
+        <p class="subtitle">Years of Experience</p>
+      </div>
+
+      <div
+        class="card"
+        style="background-image: url(/WS07_Projektityo/images/card2.jpg)"
+      >
+        <p class="title-card">750+</p>
+        <p class="subtitle">Tours Completed</p>
+      </div>
+
+      <div
+        class="card"
+        style="background-image: url(/WS07_Projektityo/images/card3.jpg)"
+      >
+        <p class="title-card">+4500</p>
+        <p class="subtitle">Smiles</p>
+      </div>
+    </div>
+    <section class="travel-atmosphere">
+      <div class="container">
+        <h2 class="section-title">Travel Atmosphere</h2>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev">‹</button>
+          <div class="carousel">
+            <div class="carousel-card">
+              <img src="images/card1.jpg" alt="Card 1" />
+            </div>
+            <div class="carousel-card">
+              <img src="images/aurora.jpg" alt="Card 2" />
+            </div>
+            <div class="carousel-card">
+              <img src="images/card3.jpg" alt="Card 3" />
+            </div>
+            <div class="carousel-card">
+              <img src="images/india.jpg" alt="Card 4" />
+            </div>
+            <div class="carousel-card">
+              <img src="images/contact.jpg" alt="Card 5" />
+            </div>
+            <div class="carousel-card">
+              <img src="images/norway.jpg" alt="Card 6" />
+            </div>
+          </div>
+          <button class="carousel-btn next">›</button>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Join our adventures!</h2>
+          <p>
+            Explore the world with us. Leave your contact details and we will
+            get in touch.
+          </p>
+        </div>
+        <div class="contact-right">
+          <h3>Leave a request</h3>
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Your Email" />
+            <input type="tel" name="phone" placeholder="Your Phone" />
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html">Our Tours</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>Adress: 123 Helsinki, Finland</p>
+          <p>Email: hello@travelsite.com</p>
+          <p>Phone:+1 234 567 890</p>
+        </div>
+        <div class="footer-column">
+          <h4>Follow us</h4>
+          <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top">&#8679;</a>
+
+    <script>
+      const carousel = document.querySelector(".carousel");
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+
+      const cardWidth = () =>
+        carousel.querySelector(".carousel-card").offsetWidth + 16; // gap = 16px
+
+      nextBtn.addEventListener("click", () => {
+        carousel.scrollLeft += cardWidth();
+        if (
+          carousel.scrollLeft + carousel.offsetWidth >=
+          carousel.scrollWidth
+        ) {
+          setTimeout(() => {
+            carousel.scrollLeft = 0;
+          }, 300);
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollLeft -= cardWidth();
+        if (carousel.scrollLeft <= 0) {
+          setTimeout(() => {
+            carousel.scrollLeft = carousel.scrollWidth - carousel.offsetWidth;
+          }, 300);
+        }
+      });
+    </script>
+  </body>
 </html>

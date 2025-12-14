@@ -1,35 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WS07_Projektityo</title>
-  <link rel="stylesheet" href="styles/style_project.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS07_Projektityo</title>
+    <link rel="stylesheet" href="styles/style_project.css" />
+    <link rel="stylesheet" href="styles/style_tours.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/icon3.png" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="header-content">
+        <a class="header-link" href="index.html">Home</a>
+        <a class="header-link hide-on-mobile-link" href="tours.html"
+          >Our tours</a
+        >
+        <a class="header-link hide-on-mobile-link" href="about.html"
+          >About us</a
+        >
+        <a class="header-link hide-on-mobile-link" href="contacts.html"
+          >Contact</a
+        >
+        <button
+          class="navbar-toggler"
+          style="color: #ffca0c"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="tours.html">Our tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="tours.html">Our tours</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-        </ul>
+    <div class="main-section-tours">
+      <h1 class="title-tours">Our tours</h1>
+      <div class="hero-container">
+        <h1>We create best tours</h1>
       </div>
     </div>
-  </nav>
+    <section class="tours">
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to Norway</h2>
+          <p class="dates">12–18 December</p>
+          <p class="desc">
+            Explore the fjords, mountains, and northern nature. Perfect for a
+            first-time adventure.
+          </p>
+          <h3 class="price">from 1700 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img src="/WS07_Projektityo/images/norway.jpg" alt="Norway Tour" />
+      </div>
 
-  <div class="container my-5">
-    <h1>We create best tours</h1>
-   
-  </div>
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to South Africa</h2>
+          <p class="dates">12–20 August</p>
+          <p class="desc">
+            Safari adventures, wildlife, and stunning landscapes. Experience
+            Africa like never before.
+          </p>
+          <h3 class="price">from 1500 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img
+          src="/WS07_Projektityo/images/southafrica.jpg"
+          alt="South Africa Tour"
+        />
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to Morocco</h2>
+          <p class="dates">1–11 May</p>
+          <p class="desc">
+            Discover colorful markets, deserts, and ancient cities. A magical
+            Moroccan experience.
+          </p>
+          <h3 class="price">from 1200 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img src="/WS07_Projektityo/images/maroc.jpg" alt="Morocco Tour" />
+      </div>
+
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to India</h2>
+          <p class="dates">20–31 March</p>
+          <p class="desc">
+            Experience vibrant culture, historic temples, and exotic cuisine. An
+            unforgettable journey.
+          </p>
+          <h3 class="price">from 800 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img src="/WS07_Projektityo/images/india.jpg" alt="India Tour" />
+      </div>
+
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to Iceland</h2>
+          <p class="dates">11-25 July</p>
+          <p class="desc">
+            Witness geysers, glaciers, and northern lights. Ideal for nature and
+            adventure lovers.
+          </p>
+          <h3 class="price">from 1800 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img src="/WS07_Projektityo/images/iceland.jpg" alt="Iceland Tour" />
+      </div>
+
+      <div class="tour-card">
+        <div class="tour-content">
+          <h2>Tour to China</h2>
+          <p class="dates">7–18 April</p>
+          <p class="desc">
+            Explore ancient history, the Great Wall, and bustling cities. A
+            journey full of culture and adventure.
+          </p>
+          <h3 class="price">from 1000 €</h3>
+          <button class="btn">Learn More</button>
+        </div>
+        <img src="/WS07_Projektityo/images/china.jpg" alt="China Tour" />
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html">Our Tours</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>Adress: 123 Helsinki, Finland</p>
+          <p>Email: hello@travelsite.com</p>
+          <p>Phone:+1 234 567 890</p>
+        </div>
+        <div class="footer-column">
+          <h4>Follow us</h4>
+          <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top">&#8679;</a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,113 @@
+ .main-section-tours{
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/card3.jpg);
+  background-size: cover;      /* изображение растягивается по всему блоку */
+  background-position: center;
+  height: 700px;               /* высота блока, можно менять */
+  display: flex;
+  position: relative;
+   margin-top: 0;
+  padding-top: 0;
+  color: white;
+  border-bottom-left-radius: 2%;
+border-bottom-right-radius: 2%;
+
+
+}
+h1.title-tours {
+  font-family: 'Caprasimo';
+  font-size: clamp(80px, 10vw, 300px); /* адаптивный размер */
+  margin: 0;
+  line-height: 1.1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  color: rgb(255, 198, 55);
+}
+ .tours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px;
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color:white;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 250px;       
+  object-fit: cover;   
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.tour-content {
+  padding: 20px;
+}
+
+.tour-content h2 {
+  margin: 0 0 8px;
+}
+
+.dates {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.desc {
+  margin-bottom: 16px;
+}
+
+.price {
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: black !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  outline: none !important;
+}
+.btn:hover {
+  outline: none !important;
+  background: #f0c401 !important ; 
+}
+.btn:focus,
+.btn:active {
+  outline: none; /* убираем черную рамку */
+  box-shadow: none;
+}
+
+.tour-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* мобильная версия */
+@media (max-width: 768px) {
+  .tours {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-card {
+    flex-direction: column-reverse;
+  }
+}
+
+
+

@@ -1,0 +1,204 @@
+.main-section-about {
+
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/aurora.jpg); 
+  background-size: cover;      /* изображение растягивается по всему блоку */
+  background-position: center;
+  height: 700px;               /* высота блока, можно менять */
+  display: flex;
+  position: relative;
+   margin-top: 0;
+  padding-top: 0;
+  color: white;
+  border-bottom-left-radius: 2%;
+border-bottom-right-radius: 2%;
+
+
+}
+
+h1.title {
+  font-family: 'Caprasimo';
+  font-size: clamp(80px, 10vw, 300px); /* адаптивный размер */
+  margin: 0;
+  line-height: 1.1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  color: #ffca0c;
+}
+
+.our-mission {
+  background: #f0f0f0; 
+  padding: 80px 0;
+  text-align: center;
+}
+
+.our-mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Caprasimo'; 
+  color: #ffca0c;
+}
+
+.our-mission p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.mission-icons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.icon-block img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.icon-block p {
+  font-weight: 600;
+  color: #555;
+}
+
+
+.our-story {
+  padding: 60px 5%;
+  background-image: linear-gradient(rgba(31, 31, 37, 0.599), rgba(39, 39, 39, 0.259)), url(/WS07_Projektityo/images/rock.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  padding-bottom: 5%;
+    border-bottom-left-radius: 2%;
+border-bottom-right-radius: 2%;
+  
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(24px, 5vw, 48px);
+  margin-bottom: 40px;
+  font-family: 'Caprasimo';
+  color: #ffca0c;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  padding-left: 50%; /* отступ до линии */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* линия по центру */
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffca0c,
+    #ffca0c 4px,
+    transparent 4px,
+    transparent 12px
+  );
+  border-radius: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start; /* плашки по правому краю линии */
+}
+
+.timeline-content {
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  border-radius: 20px;
+  color: #ffffff;
+  max-width: 600px;
+   width: 100%;           /* растягиваем по доступному блоку */
+  max-width: 500px;      /* одинаковая максимальная ширина для всех плашек */
+  min-width: 300px;      /* минимальная ширина для маленьких экранов */
+  box-sizing: border-box; /* учитываем padding в ширине */
+  margin-left: 20px;    
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+  color: #ffca0c;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 20px;
+  }
+  .timeline::before {
+    left: 10px; /* линия ближе к левому краю */
+    transform: none;
+  }
+  .timeline-item {
+    justify-content: flex-start; /* плашки под линией */
+    flex-direction: column;
+  }
+  .timeline-content {
+    max-width: 90%;      /* уменьшаем ширину для мобильных */
+    min-width: unset;    /* снимаем минимальную ширину */
+    margin-left: 40px;   /* от линии */
+  }
+}
+
+  .team {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.team h2 {
+  font-family: 'Caprasimo';
+  font-size: clamp(24px, 5vw, 48px);
+  margin-bottom: 40px;
+  color: #ffca0c;
+}
+
+.team-members {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.member p {
+  margin: 4px 0;
+}
+.name {
+   font-weight: bold;
+}
+

@@ -1,0 +1,175 @@
+ .main-section-contacts{
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/contact.jpg);
+  background-size: cover;      
+  background-position: center;
+  height: 700px;               
+  display: flex;
+  position: relative;
+   margin-top: 0;
+  padding-top: 0;
+  color: white;
+  border-bottom-left-radius: 2%;
+border-bottom-right-radius: 2%;
+
+
+}
+h1.title-contacts {
+  font-family: 'Caprasimo';
+  font-size: clamp(80px, 10vw, 300px); /* адаптивный размер */
+  margin: 0;
+  line-height: 1.1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  color: rgb(255, 198, 55);
+}
+.contact-info {
+  padding: 80px 5%;
+  background-color: #f5f5f5;
+}
+
+.contact-title {
+  text-align: center;
+  font-family: 'Caprasimo';
+  font-size: clamp(32px, 6vw, 64px);
+  margin-bottom: 60px;
+  color: rgb(255, 198, 55);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.contact-item {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact-label {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.contact-item:hover {
+    background: rgb(255, 198, 55);
+    
+}
+.contact-item a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* адаптив */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.cta-section {
+    padding: 80px 5%;
+  min-height: 500px;
+  padding: 80px 5%;
+  background:linear-gradient(rgba(37 36 54 / 46%), rgba(124, 73, 73, 0.214)), url(/WS07_Projektityo/images/maroc.jpg); ;
+ background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+
+.cta-inner {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.cta-text {
+  flex: 1;
+}
+
+.cta-text h2 {
+  font-size: clamp(32px, 5vw, 64px);
+  margin-bottom: 16px;
+  color: #f0c401;
+}
+
+.cta-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f3f3f3;
+}
+
+.cta-action {
+  flex: 1;
+  background: rgba(225, 225, 225, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  border: 2px solid #ffca0c;
+
+}
+
+.cta-action h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.cta-action p {
+  margin-bottom: 24px;
+  color: #c5c5c5;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-btn:hover {
+  background: #f0c401;
+  color: #111;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-action {
+    width: 100%;
+  }
+}
+  .cta-section {
+    min-height: 400px; 
+    padding: 60px 5%;
+  }
+
+
