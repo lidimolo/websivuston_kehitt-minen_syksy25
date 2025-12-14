@@ -45,7 +45,6 @@ text-decoration: none;
 }
 .nav-link, .nav-item, .navbar-nav, .navbar-collapse  {
   width: fit-content;
-  /* flex: none; */
   flex-grow: 0 !important;
   
 }
@@ -58,10 +57,10 @@ flex-basis: auto  !important ; }
 
 .main-section {
 
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/sea.jpg); 
-  background-size: cover;      /* изображение растягивается по всему блоку */
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(../images/sea.jpg); 
+  background-size: cover;      
   background-position: center;
-  height: 700px;               /* высота блока, можно менять */
+  height: 700px;               
   display: flex;
   position: relative;
    margin-top: 0;
