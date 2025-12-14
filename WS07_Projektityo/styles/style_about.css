@@ -1,6 +1,6 @@
 .main-section-about {
 
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/aurora.jpg); 
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url("images/aurora.jpg"); 
   background-size: cover;      /* изображение растягивается по всему блоку */
   background-position: center;
   height: 700px;               /* высота блока, можно менять */
@@ -76,7 +76,7 @@ h1.title {
 
 .our-story {
   padding: 60px 5%;
-  background-image: linear-gradient(rgba(31, 31, 37, 0.599), rgba(39, 39, 39, 0.259)), url(/WS07_Projektityo/images/rock.jpg); 
+  background-image: linear-gradient(rgba(31, 31, 37, 0.599), rgba(39, 39, 39, 0.259)), url("images/rock.jpg"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -100,13 +100,13 @@ border-bottom-right-radius: 2%;
   flex-direction: column;
   gap: 60px;
   position: relative;
-  padding-left: 50%; /* отступ до линии */
+  padding-left: 50%; 
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 50%; /* линия по центру */
+  left: 50%; 
   transform: translateX(-50%);
   top: 0;
   bottom: 0;
@@ -123,7 +123,7 @@ border-bottom-right-radius: 2%;
 
 .timeline-item {
   display: flex;
-  justify-content: flex-start; /* плашки по правому краю линии */
+  justify-content: flex-start; 
 }
 
 .timeline-content {
@@ -133,10 +133,10 @@ border-bottom-right-radius: 2%;
   border-radius: 20px;
   color: #ffffff;
   max-width: 600px;
-   width: 100%;           /* растягиваем по доступному блоку */
-  max-width: 500px;      /* одинаковая максимальная ширина для всех плашек */
-  min-width: 300px;      /* минимальная ширина для маленьких экранов */
-  box-sizing: border-box; /* учитываем padding в ширине */
+   width: 100%;           
+  max-width: 500px;      
+  min-width: 300px;      
+  box-sizing: border-box; 
   margin-left: 20px;    
 }
 
@@ -148,23 +148,23 @@ border-bottom-right-radius: 2%;
   color: #ffca0c;
 }
 
-/* Мобильная версия */
+
 @media (max-width: 768px) {
   .timeline {
     padding-left: 20px;
   }
   .timeline::before {
-    left: 10px; /* линия ближе к левому краю */
+    left: 10px; 
     transform: none;
   }
   .timeline-item {
-    justify-content: flex-start; /* плашки под линией */
+    justify-content: flex-start; 
     flex-direction: column;
   }
   .timeline-content {
-    max-width: 90%;      /* уменьшаем ширину для мобильных */
-    min-width: unset;    /* снимаем минимальную ширину */
-    margin-left: 40px;   /* от линии */
+    max-width: 90%;      
+    min-width: unset;    
+    margin-left: 40px;   
   }
 }
 

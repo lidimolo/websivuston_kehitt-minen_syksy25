@@ -166,7 +166,7 @@ border-bottom-right-radius: 2%;
 }
 .card p {
   position: relative;
-  z-index: 2; /* текст поверх затемнения */
+  z-index: 2;
   margin: 4px 0;
   color: #ffd700;
 }
@@ -180,7 +180,6 @@ border-bottom-right-radius: 2%;
   font-size: 20px;
 }
 
-/* Мобильная версия */
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column;
@@ -267,7 +266,7 @@ border-bottom-right-radius: 2%;
 
 .contact-section {
   padding: 4rem 5%;
-  background-image: url(/WS07_Projektityo/images/card3.jpg);
+  background-image:  url('images/card3.jpg');
 }
 
 .contact-container {
@@ -399,7 +398,6 @@ border-bottom-right-radius: 2%;
   color: #ccc;
 }
 
-/* Мобильная версия */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

@@ -1,5 +1,5 @@
  .main-section-tours{
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url(/WS07_Projektityo/images/card3.jpg);
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)),  url('images/card3.jpg');
   background-size: cover;      /* изображение растягивается по всему блоку */
   background-position: center;
   height: 700px;               /* высота блока, можно менять */
@@ -86,7 +86,7 @@ h1.title-tours {
 }
 .btn:focus,
 .btn:active {
-  outline: none; /* убираем черную рамку */
+  outline: none; 
   box-shadow: none;
 }
 
@@ -98,7 +98,7 @@ h1.title-tours {
   box-sizing: border-box;
 }
 
-/* мобильная версия */
+
 @media (max-width: 768px) {
   .tours {
     grid-template-columns: 1fr;
