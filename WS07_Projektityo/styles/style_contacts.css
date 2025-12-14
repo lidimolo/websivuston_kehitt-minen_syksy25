@@ -1,5 +1,5 @@
  .main-section-contacts{
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url("images/contact.jpg");
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url('../images/contact.jpg');
   background-size: cover;      
   background-position: center;
   height: 700px;               
@@ -92,7 +92,7 @@ h1.title-contacts {
     padding: 80px 5%;
   min-height: 500px;
   padding: 80px 5%;
-  background:linear-gradient(rgba(37 36 54 / 46%), rgba(124, 73, 73, 0.214)), url("images/maroc.jpg"); ;
+  background:linear-gradient(rgba(37 36 54 / 46%), rgba(124, 73, 73, 0.214)), url('../images/maroc.jpg'); ;
  background-size: cover;       
   background-position: center;   
   background-repeat: no-repeat;

@@ -1,5 +1,5 @@
  .main-section-tours{
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)),  url('images/card3.jpg');
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)),  url('../images/card3.jpg');
   background-size: cover;      /* изображение растягивается по всему блоку */
   background-position: center;
   height: 700px;               /* высота блока, можно менять */

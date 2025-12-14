@@ -1,9 +1,9 @@
 .main-section-about {
 
-  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url("images/aurora.jpg"); 
-  background-size: cover;      /* изображение растягивается по всему блоку */
+  background-image: linear-gradient(rgba(37 36 54 / 46%), rgba(0,0,0,0)), url('..images/aurora.jpg'); 
+  background-size: cover;     
   background-position: center;
-  height: 700px;               /* высота блока, можно менять */
+  height: 700px;            
   display: flex;
   position: relative;
    margin-top: 0;
@@ -17,7 +17,7 @@ border-bottom-right-radius: 2%;
 
 h1.title {
   font-family: 'Caprasimo';
-  font-size: clamp(80px, 10vw, 300px); /* адаптивный размер */
+  font-size: clamp(80px, 10vw, 300px); 
   margin: 0;
   line-height: 1.1;
   position: absolute;
@@ -76,7 +76,7 @@ h1.title {
 
 .our-story {
   padding: 60px 5%;
-  background-image: linear-gradient(rgba(31, 31, 37, 0.599), rgba(39, 39, 39, 0.259)), url("images/rock.jpg"); 
+  background-image: linear-gradient(rgba(31, 31, 37, 0.599), rgba(39, 39, 39, 0.259)), url('..images/rock.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
