@@ -49,19 +49,20 @@ h1.title-contacts {
   padding: 24px;
   border-radius: 20px;
   text-align: center;
+  outline: #f0c401 2px;
 }
 
 .contact-label {
   display: block;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   color: #777;
-  margin-bottom: 8px;
+  margin-block: 4px;
 }
 
 .contact-item:hover {
     background: rgb(255, 198, 55);
+    color: #f3f3f3;
     
 }
 .contact-item a {
@@ -73,8 +74,10 @@ h1.title-contacts {
 .contact-item a:hover {
   text-decoration: underline;
 }
+.contact-item:hover a {
+  color: #f3f3f3;
+}
 
-/* адаптив */
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -141,22 +144,17 @@ h1.title-contacts {
   color: #c5c5c5;
 }
 
-.cta-btn {
+.btn {
   display: inline-block;
   padding: 14px 32px;
   border-radius: 30px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+  background: #111 !important;
+  color: #fff !important;
 }
 
-.cta-btn:hover {
-  background: #f0c401;
-  color: #111;
+.btn:hover {
+  background: #f0c401 !important;
 }
-
-/* mobile */
 @media (max-width: 768px) {
   .cta-inner {
     flex-direction: column;

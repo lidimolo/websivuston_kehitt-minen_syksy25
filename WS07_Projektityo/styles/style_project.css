@@ -112,7 +112,19 @@ border-bottom-right-radius: 2%;
 .navbar-toggler {
   display: block !important;
 }
+}
 
+
+.navbar-collapse {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+  }
 }
    .gallery {
   display: flex;
@@ -261,9 +273,6 @@ border-bottom-right-radius: 2%;
   .carousel-btn.next { right: 10px; }
 }
 
-
-
-
 .contact-section {
   padding: 4rem 5%;
   background-image:  url('../images/card3.jpg');
@@ -347,10 +356,6 @@ border-bottom-right-radius: 2%;
     margin-top: 1rem;
   }
 }
-
-
-
-
 .site-footer {
   background-color: #333;
   color: #fff;
